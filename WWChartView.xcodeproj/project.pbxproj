@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		D4381DEA1ECED1BF001D3128 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4381DE91ECED1BF001D3128 /* main.m */; };
 		D4381DED1ECED1BF001D3128 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4381DEC1ECED1BF001D3128 /* AppDelegate.m */; };
-		D4381DF01ECED1BF001D3128 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4381DEF1ECED1BF001D3128 /* ViewController.m */; };
 		D4381DF31ECED1C0001D3128 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4381DF11ECED1C0001D3128 /* Main.storyboard */; };
 		D4381DF51ECED1C0001D3128 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4381DF41ECED1C0001D3128 /* Assets.xcassets */; };
 		D4381DF81ECED1C0001D3128 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4381DF61ECED1C0001D3128 /* LaunchScreen.storyboard */; };
@@ -31,6 +30,14 @@
 		D4381E3A1ECED830001D3128 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D4381E271ECED830001D3128 /* UIView+Extension.m */; };
 		D4381E3B1ECED830001D3128 /* WWTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D4381E291ECED830001D3128 /* WWTool.m */; };
 		D4381E3E1ECED935001D3128 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D4381E3D1ECED935001D3128 /* UIImage+Extension.m */; };
+		D4381E461ECEE159001D3128 /* WWTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4381E451ECEE159001D3128 /* WWTableViewCell.m */; };
+		D4381E4A1ECEE332001D3128 /* chartbg.png in Resources */ = {isa = PBXBuildFile; fileRef = D4381E471ECEE332001D3128 /* chartbg.png */; };
+		D4381E4B1ECEE332001D3128 /* chartbg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D4381E481ECEE332001D3128 /* chartbg@2x.png */; };
+		D4381E4C1ECEE332001D3128 /* chartbg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D4381E491ECEE332001D3128 /* chartbg@3x.png */; };
+		D458B8911ECEE61C00C34520 /* WWTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D458B8901ECEE61C00C34520 /* WWTableViewController.m */; };
+		D458B8941ECEE96600C34520 /* WWBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D458B8931ECEE96600C34520 /* WWBarViewController.m */; };
+		D458B8971ECEE97100C34520 /* WWLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D458B8961ECEE97100C34520 /* WWLineViewController.m */; };
+		D458B89A1ECEE98000C34520 /* WWCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D458B8991ECEE98000C34520 /* WWCircleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +45,6 @@
 		D4381DE91ECED1BF001D3128 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D4381DEB1ECED1BF001D3128 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D4381DEC1ECED1BF001D3128 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D4381DEE1ECED1BF001D3128 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D4381DEF1ECED1BF001D3128 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D4381DF21ECED1C0001D3128 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D4381DF41ECED1C0001D3128 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4381DF71ECED1C0001D3128 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -80,6 +85,19 @@
 		D4381E291ECED830001D3128 /* WWTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWTool.m; sourceTree = "<group>"; };
 		D4381E3C1ECED935001D3128 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
 		D4381E3D1ECED935001D3128 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		D4381E441ECEE159001D3128 /* WWTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WWTableViewCell.h; path = ../WWTableViewCell.h; sourceTree = "<group>"; };
+		D4381E451ECEE159001D3128 /* WWTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WWTableViewCell.m; path = ../WWTableViewCell.m; sourceTree = "<group>"; };
+		D4381E471ECEE332001D3128 /* chartbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chartbg.png; sourceTree = "<group>"; };
+		D4381E481ECEE332001D3128 /* chartbg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chartbg@2x.png"; sourceTree = "<group>"; };
+		D4381E491ECEE332001D3128 /* chartbg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chartbg@3x.png"; sourceTree = "<group>"; };
+		D458B88F1ECEE61C00C34520 /* WWTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWTableViewController.h; sourceTree = "<group>"; };
+		D458B8901ECEE61C00C34520 /* WWTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWTableViewController.m; sourceTree = "<group>"; };
+		D458B8921ECEE96600C34520 /* WWBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWBarViewController.h; sourceTree = "<group>"; };
+		D458B8931ECEE96600C34520 /* WWBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWBarViewController.m; sourceTree = "<group>"; };
+		D458B8951ECEE97100C34520 /* WWLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWLineViewController.h; sourceTree = "<group>"; };
+		D458B8961ECEE97100C34520 /* WWLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWLineViewController.m; sourceTree = "<group>"; };
+		D458B8981ECEE98000C34520 /* WWCircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWCircleViewController.h; sourceTree = "<group>"; };
+		D458B8991ECEE98000C34520 /* WWCircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWCircleViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,13 +133,21 @@
 				D4381DFF1ECED830001D3128 /* ChartView */,
 				D4381DEB1ECED1BF001D3128 /* AppDelegate.h */,
 				D4381DEC1ECED1BF001D3128 /* AppDelegate.m */,
-				D4381DEE1ECED1BF001D3128 /* ViewController.h */,
-				D4381DEF1ECED1BF001D3128 /* ViewController.m */,
+				D4381E441ECEE159001D3128 /* WWTableViewCell.h */,
+				D4381E451ECEE159001D3128 /* WWTableViewCell.m */,
+				D458B88F1ECEE61C00C34520 /* WWTableViewController.h */,
+				D458B8901ECEE61C00C34520 /* WWTableViewController.m */,
 				D4381DF11ECED1C0001D3128 /* Main.storyboard */,
 				D4381DF41ECED1C0001D3128 /* Assets.xcassets */,
 				D4381DF61ECED1C0001D3128 /* LaunchScreen.storyboard */,
 				D4381DF91ECED1C0001D3128 /* Info.plist */,
 				D4381DE81ECED1BF001D3128 /* Supporting Files */,
+				D458B8921ECEE96600C34520 /* WWBarViewController.h */,
+				D458B8931ECEE96600C34520 /* WWBarViewController.m */,
+				D458B8951ECEE97100C34520 /* WWLineViewController.h */,
+				D458B8961ECEE97100C34520 /* WWLineViewController.m */,
+				D458B8981ECEE98000C34520 /* WWCircleViewController.h */,
+				D458B8991ECEE98000C34520 /* WWCircleViewController.m */,
 			);
 			path = WWChartView;
 			sourceTree = "<group>";
@@ -137,6 +163,9 @@
 		D4381DFF1ECED830001D3128 /* ChartView */ = {
 			isa = PBXGroup;
 			children = (
+				D4381E471ECEE332001D3128 /* chartbg.png */,
+				D4381E481ECEE332001D3128 /* chartbg@2x.png */,
+				D4381E491ECEE332001D3128 /* chartbg@3x.png */,
 				D4381E001ECED830001D3128 /* Bar */,
 				D4381E091ECED830001D3128 /* Base */,
 				D4381E111ECED830001D3128 /* LineChartView */,
@@ -275,9 +304,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4381E4B1ECEE332001D3128 /* chartbg@2x.png in Resources */,
 				D4381DF81ECED1C0001D3128 /* LaunchScreen.storyboard in Resources */,
+				D4381E4A1ECEE332001D3128 /* chartbg.png in Resources */,
 				D4381DF51ECED1C0001D3128 /* Assets.xcassets in Resources */,
 				D4381DF31ECED1C0001D3128 /* Main.storyboard in Resources */,
+				D4381E4C1ECEE332001D3128 /* chartbg@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,13 +322,15 @@
 			files = (
 				D4381E2C1ECED830001D3128 /* WWBarView.m in Sources */,
 				D4381E341ECED830001D3128 /* WWLineYAxisItem.m in Sources */,
+				D458B8941ECEE96600C34520 /* WWBarViewController.m in Sources */,
 				D4381E371ECED830001D3128 /* WWPieChartView.m in Sources */,
 				D4381E2D1ECED830001D3128 /* WWBarXAxisItem.m in Sources */,
-				D4381DF01ECED1BF001D3128 /* ViewController.m in Sources */,
 				D4381E331ECED830001D3128 /* WWLineXAxisView.m in Sources */,
 				D4381E381ECED830001D3128 /* NSString+DecimalNumber.m in Sources */,
+				D458B8911ECEE61C00C34520 /* WWTableViewController.m in Sources */,
 				D4381DED1ECED1BF001D3128 /* AppDelegate.m in Sources */,
 				D4381E3E1ECED935001D3128 /* UIImage+Extension.m in Sources */,
+				D458B89A1ECEE98000C34520 /* WWCircleViewController.m in Sources */,
 				D4381E301ECED830001D3128 /* WWXAxisView.m in Sources */,
 				D4381E3A1ECED830001D3128 /* UIView+Extension.m in Sources */,
 				D4381E3B1ECED830001D3128 /* WWTool.m in Sources */,
@@ -309,6 +343,8 @@
 				D4381E321ECED830001D3128 /* WWLineScrollView.m in Sources */,
 				D4381DEA1ECED1BF001D3128 /* main.m in Sources */,
 				D4381E2A1ECED830001D3128 /* WWBarChartItem.m in Sources */,
+				D458B8971ECEE97100C34520 /* WWLineViewController.m in Sources */,
+				D4381E461ECEE159001D3128 /* WWTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -41,7 +41,9 @@
 }
 
 - (NSString *)priceByDividingBy:(NSString *)number {
-    
+//    if (number.doubleValue ==0.000) {
+//        return nil;
+//    }
     NSDecimalNumber *numberA = [NSDecimalNumber decimalNumberWithString:self];
     NSDecimalNumber *numberB = [NSDecimalNumber decimalNumberWithString:number];
     

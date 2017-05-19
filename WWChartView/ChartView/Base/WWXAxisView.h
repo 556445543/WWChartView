@@ -39,7 +39,7 @@
  */
 @property (nonatomic,assign) NSInteger lastIndex;
 
-- (instancetype)initWithFrame:(CGRect)frame xAxisCount:(NSInteger)xAxisCount countOfshowCandle:(NSInteger)countOfshowCandle;
+- (instancetype)initWithFrame:(CGRect)frame xAxisCount:(NSInteger)xAxisCount;
 
 - (void)updateXAxisArray;
 

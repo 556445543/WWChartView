@@ -136,7 +136,7 @@ NSInteger const WWBgImageViewTag = 124;
     
 }
 
--(void)setYisYLabelArray:(NSArray *)yisYLabelArray
+-(void)setYisYLabelArray:(NSArray<NSString *> *)yisYLabelArray
 {
     _yisYLabelArray = yisYLabelArray;
     

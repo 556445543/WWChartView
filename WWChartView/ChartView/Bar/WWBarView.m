@@ -91,7 +91,7 @@
 
     }];
     
-    WWXAxisView *xView = [[WWXAxisView alloc] initWithFrame:CGRectMake(0, self.scrollView.bounds.size.height - self.bottomSeparationDistance , self.scrollView.bounds.size.width, self.bottomSeparationDistance) xAxisCount:4 countOfshowCandle:self.scrollView.countOfshowCandle];
+    WWXAxisView *xView = [[WWXAxisView alloc] initWithFrame:CGRectMake(0, self.scrollView.bounds.size.height - self.bottomSeparationDistance , self.scrollView.bounds.size.width, self.bottomSeparationDistance) xAxisCount:4];
     xView.clipsToBounds = NO;
     xView.autoDisplayXAxis = self.autoDisplayXAxis;
     

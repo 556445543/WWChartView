@@ -28,7 +28,7 @@
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
 
-- (instancetype)initWithFrame:(CGRect)frame xAxisCount:(NSInteger)xAxisCount countOfshowCandle:(NSInteger)countOfshowCandle{
+- (instancetype)initWithFrame:(CGRect)frame xAxisCount:(NSInteger)xAxisCount{
     self = [super initWithFrame:frame];
     if (self) {
         _xAxisCount = xAxisCount;

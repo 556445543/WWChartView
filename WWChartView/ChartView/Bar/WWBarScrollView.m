@@ -111,7 +111,9 @@ static const CGFloat radius=2.f;
     return _chartItemColor;
 }
 - (NSInteger)countOfshowCandle{
-    
+    if (self.candleWidth + self.horizontalSpacing == 0) {
+        return 0;
+    }
     NSString *count = [[NSString stringWithFormat:@"%f",self.width ] priceByDividingBy:[NSString stringWithFormat:@"%f",self.candleWidth + self.horizontalSpacing]];
     NSString *countStr = [NSString notRounding:count afterPoint:0 roundingMode:NSRoundDown];
     return countStr.integerValue;
@@ -432,7 +434,6 @@ static const CGFloat radius=2.f;
             self.lastHighlightLineCurrentIndex = self.highlightLineCurrentIndex;
             
             [self setupShadowLayerWithentity:entity];
-            NSLog(@"选中了第%ld个！！",entity.index);
             if (self.chartViewDidClickedCompletion) {
                 self.chartViewDidClickedCompletion(entity.index);
             }
@@ -467,7 +468,6 @@ static const CGFloat radius=2.f;
         WWChartEntity *entity = self.entityArray[i];
         
         if (CGRectContainsPoint(entity.rect, point)) {
-            NSLog(@"选中了第%ld个！！",entity.index);
             
             [self setupShadowLayerWithentity:entity];
             

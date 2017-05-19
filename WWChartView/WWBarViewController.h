@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  WWBarViewController.h
 //  WWChartView
 //
 //  Created by ww on 2017/5/19.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface WWBarViewController : UIViewController
 
 @end
-

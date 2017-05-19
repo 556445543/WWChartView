@@ -276,6 +276,9 @@ static const CGFloat radius=1.8f;
 }
 
 - (NSInteger)countOfshowCandle{
+    if (self.candleWidth == 0) {
+        return 0;
+    }
     NSString *nb3 = [[NSString stringWithFormat:@"%f",self.width] priceByDividingBy:[NSString stringWithFormat:@"%f",self.candleWidth]];
     NSString *str2 = [NSString notRounding:nb3 afterPoint:0 roundingMode:NSRoundDown];
     

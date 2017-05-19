@@ -34,7 +34,7 @@
 /*****X坐标轴上的值******/
 //@property (nonatomic,copy) NSArray *xisXLabelArray;
 
-@property (nonatomic,copy) NSArray *yisYLabelArray;
+@property (nonatomic,copy) NSArray <NSString *> *yisYLabelArray;
 
 @property (nonatomic,copy) NSArray *dataArray;
 
