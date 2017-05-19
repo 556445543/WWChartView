@@ -33,7 +33,10 @@
     
     [self.view addSubview:barView];
     self.barView = barView;
-    
+    self.barView.candleMaxWidth = 30;
+    self.barView.candleMinWidth = 8;
+    self.barView.animation = YES;
+    self.barView.drawCenterLineEnabled = YES;
     self.barView.highlightLineShowEnabled = YES;
     self.barView.yMAxValue = 50;
     self.barView.yMinValue = 127;
@@ -214,7 +217,9 @@
 
     self.barView.drawYAxisEnable = NO;
     
-
+    self.barView.candleMaxWidth = 30;
+    self.barView.candleMinWidth = 8;
+    self.barView.animation = YES;
     
     __weak __typeof(self)weakSelf = self;
     
