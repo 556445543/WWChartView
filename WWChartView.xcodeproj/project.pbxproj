@@ -13,6 +13,25 @@
 		D4381DF31ECED1C0001D3128 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4381DF11ECED1C0001D3128 /* Main.storyboard */; };
 		D4381DF51ECED1C0001D3128 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4381DF41ECED1C0001D3128 /* Assets.xcassets */; };
 		D4381DF81ECED1C0001D3128 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4381DF61ECED1C0001D3128 /* LaunchScreen.storyboard */; };
+		D4381E2A1ECED830001D3128 /* WWBarChartItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D4381E021ECED830001D3128 /* WWBarChartItem.m */; };
+		D4381E2B1ECED830001D3128 /* WWBarScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4381E041ECED830001D3128 /* WWBarScrollView.m */; };
+		D4381E2C1ECED830001D3128 /* WWBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4381E061ECED830001D3128 /* WWBarView.m */; };
+		D4381E2D1ECED830001D3128 /* WWBarXAxisItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D4381E081ECED830001D3128 /* WWBarXAxisItem.m */; };
+		D4381E2E1ECED830001D3128 /* WWChartBackGroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4381E0B1ECED830001D3128 /* WWChartBackGroundView.m */; };
+		D4381E2F1ECED830001D3128 /* WWChartEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = D4381E0E1ECED830001D3128 /* WWChartEntity.m */; };
+		D4381E301ECED830001D3128 /* WWXAxisView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4381E101ECED830001D3128 /* WWXAxisView.m */; };
+		D4381E311ECED830001D3128 /* WWLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4381E131ECED830001D3128 /* WWLineChartView.m */; };
+		D4381E321ECED830001D3128 /* WWLineScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4381E151ECED830001D3128 /* WWLineScrollView.m */; };
+		D4381E331ECED830001D3128 /* WWLineXAxisView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4381E171ECED830001D3128 /* WWLineXAxisView.m */; };
+		D4381E341ECED830001D3128 /* WWLineYAxisItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D4381E191ECED830001D3128 /* WWLineYAxisItem.m */; };
+		D4381E351ECED830001D3128 /* WWPieChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D4381E1C1ECED830001D3128 /* WWPieChartDataItem.m */; };
+		D4381E361ECED830001D3128 /* WWPieCHartLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D4381E1E1ECED830001D3128 /* WWPieCHartLayer.m */; };
+		D4381E371ECED830001D3128 /* WWPieChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4381E201ECED830001D3128 /* WWPieChartView.m */; };
+		D4381E381ECED830001D3128 /* NSString+DecimalNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = D4381E231ECED830001D3128 /* NSString+DecimalNumber.m */; };
+		D4381E391ECED830001D3128 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = D4381E251ECED830001D3128 /* UIColor+Hex.m */; };
+		D4381E3A1ECED830001D3128 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D4381E271ECED830001D3128 /* UIView+Extension.m */; };
+		D4381E3B1ECED830001D3128 /* WWTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D4381E291ECED830001D3128 /* WWTool.m */; };
+		D4381E3E1ECED935001D3128 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D4381E3D1ECED935001D3128 /* UIImage+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +45,44 @@
 		D4381DF41ECED1C0001D3128 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4381DF71ECED1C0001D3128 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4381DF91ECED1C0001D3128 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4381E011ECED830001D3128 /* WWBarChartItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWBarChartItem.h; sourceTree = "<group>"; };
+		D4381E021ECED830001D3128 /* WWBarChartItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWBarChartItem.m; sourceTree = "<group>"; };
+		D4381E031ECED830001D3128 /* WWBarScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWBarScrollView.h; sourceTree = "<group>"; };
+		D4381E041ECED830001D3128 /* WWBarScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWBarScrollView.m; sourceTree = "<group>"; };
+		D4381E051ECED830001D3128 /* WWBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWBarView.h; sourceTree = "<group>"; };
+		D4381E061ECED830001D3128 /* WWBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWBarView.m; sourceTree = "<group>"; };
+		D4381E071ECED830001D3128 /* WWBarXAxisItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWBarXAxisItem.h; sourceTree = "<group>"; };
+		D4381E081ECED830001D3128 /* WWBarXAxisItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWBarXAxisItem.m; sourceTree = "<group>"; };
+		D4381E0A1ECED830001D3128 /* WWChartBackGroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWChartBackGroundView.h; sourceTree = "<group>"; };
+		D4381E0B1ECED830001D3128 /* WWChartBackGroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWChartBackGroundView.m; sourceTree = "<group>"; };
+		D4381E0D1ECED830001D3128 /* WWChartEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWChartEntity.h; sourceTree = "<group>"; };
+		D4381E0E1ECED830001D3128 /* WWChartEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWChartEntity.m; sourceTree = "<group>"; };
+		D4381E0F1ECED830001D3128 /* WWXAxisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWXAxisView.h; sourceTree = "<group>"; };
+		D4381E101ECED830001D3128 /* WWXAxisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWXAxisView.m; sourceTree = "<group>"; };
+		D4381E121ECED830001D3128 /* WWLineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWLineChartView.h; sourceTree = "<group>"; };
+		D4381E131ECED830001D3128 /* WWLineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWLineChartView.m; sourceTree = "<group>"; };
+		D4381E141ECED830001D3128 /* WWLineScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWLineScrollView.h; sourceTree = "<group>"; };
+		D4381E151ECED830001D3128 /* WWLineScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWLineScrollView.m; sourceTree = "<group>"; };
+		D4381E161ECED830001D3128 /* WWLineXAxisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWLineXAxisView.h; sourceTree = "<group>"; };
+		D4381E171ECED830001D3128 /* WWLineXAxisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWLineXAxisView.m; sourceTree = "<group>"; };
+		D4381E181ECED830001D3128 /* WWLineYAxisItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWLineYAxisItem.h; sourceTree = "<group>"; };
+		D4381E191ECED830001D3128 /* WWLineYAxisItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWLineYAxisItem.m; sourceTree = "<group>"; };
+		D4381E1B1ECED830001D3128 /* WWPieChartDataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWPieChartDataItem.h; sourceTree = "<group>"; };
+		D4381E1C1ECED830001D3128 /* WWPieChartDataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWPieChartDataItem.m; sourceTree = "<group>"; };
+		D4381E1D1ECED830001D3128 /* WWPieCHartLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWPieCHartLayer.h; sourceTree = "<group>"; };
+		D4381E1E1ECED830001D3128 /* WWPieCHartLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWPieCHartLayer.m; sourceTree = "<group>"; };
+		D4381E1F1ECED830001D3128 /* WWPieChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWPieChartView.h; sourceTree = "<group>"; };
+		D4381E201ECED830001D3128 /* WWPieChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWPieChartView.m; sourceTree = "<group>"; };
+		D4381E221ECED830001D3128 /* NSString+DecimalNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DecimalNumber.h"; sourceTree = "<group>"; };
+		D4381E231ECED830001D3128 /* NSString+DecimalNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DecimalNumber.m"; sourceTree = "<group>"; };
+		D4381E241ECED830001D3128 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		D4381E251ECED830001D3128 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		D4381E261ECED830001D3128 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		D4381E271ECED830001D3128 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		D4381E281ECED830001D3128 /* WWTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWTool.h; sourceTree = "<group>"; };
+		D4381E291ECED830001D3128 /* WWTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWTool.m; sourceTree = "<group>"; };
+		D4381E3C1ECED935001D3128 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		D4381E3D1ECED935001D3128 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +115,7 @@
 		D4381DE71ECED1BF001D3128 /* WWChartView */ = {
 			isa = PBXGroup;
 			children = (
+				D4381DFF1ECED830001D3128 /* ChartView */,
 				D4381DEB1ECED1BF001D3128 /* AppDelegate.h */,
 				D4381DEC1ECED1BF001D3128 /* AppDelegate.m */,
 				D4381DEE1ECED1BF001D3128 /* ViewController.h */,
@@ -77,6 +135,91 @@
 				D4381DE91ECED1BF001D3128 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D4381DFF1ECED830001D3128 /* ChartView */ = {
+			isa = PBXGroup;
+			children = (
+				D4381E001ECED830001D3128 /* Bar */,
+				D4381E091ECED830001D3128 /* Base */,
+				D4381E111ECED830001D3128 /* LineChartView */,
+				D4381E1A1ECED830001D3128 /* Pie */,
+				D4381E211ECED830001D3128 /* Tool */,
+			);
+			path = ChartView;
+			sourceTree = "<group>";
+		};
+		D4381E001ECED830001D3128 /* Bar */ = {
+			isa = PBXGroup;
+			children = (
+				D4381E011ECED830001D3128 /* WWBarChartItem.h */,
+				D4381E021ECED830001D3128 /* WWBarChartItem.m */,
+				D4381E031ECED830001D3128 /* WWBarScrollView.h */,
+				D4381E041ECED830001D3128 /* WWBarScrollView.m */,
+				D4381E051ECED830001D3128 /* WWBarView.h */,
+				D4381E061ECED830001D3128 /* WWBarView.m */,
+				D4381E071ECED830001D3128 /* WWBarXAxisItem.h */,
+				D4381E081ECED830001D3128 /* WWBarXAxisItem.m */,
+			);
+			path = Bar;
+			sourceTree = "<group>";
+		};
+		D4381E091ECED830001D3128 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D4381E0A1ECED830001D3128 /* WWChartBackGroundView.h */,
+				D4381E0B1ECED830001D3128 /* WWChartBackGroundView.m */,
+				D4381E0D1ECED830001D3128 /* WWChartEntity.h */,
+				D4381E0E1ECED830001D3128 /* WWChartEntity.m */,
+				D4381E0F1ECED830001D3128 /* WWXAxisView.h */,
+				D4381E101ECED830001D3128 /* WWXAxisView.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D4381E111ECED830001D3128 /* LineChartView */ = {
+			isa = PBXGroup;
+			children = (
+				D4381E121ECED830001D3128 /* WWLineChartView.h */,
+				D4381E131ECED830001D3128 /* WWLineChartView.m */,
+				D4381E141ECED830001D3128 /* WWLineScrollView.h */,
+				D4381E151ECED830001D3128 /* WWLineScrollView.m */,
+				D4381E161ECED830001D3128 /* WWLineXAxisView.h */,
+				D4381E171ECED830001D3128 /* WWLineXAxisView.m */,
+				D4381E181ECED830001D3128 /* WWLineYAxisItem.h */,
+				D4381E191ECED830001D3128 /* WWLineYAxisItem.m */,
+			);
+			path = LineChartView;
+			sourceTree = "<group>";
+		};
+		D4381E1A1ECED830001D3128 /* Pie */ = {
+			isa = PBXGroup;
+			children = (
+				D4381E1B1ECED830001D3128 /* WWPieChartDataItem.h */,
+				D4381E1C1ECED830001D3128 /* WWPieChartDataItem.m */,
+				D4381E1D1ECED830001D3128 /* WWPieCHartLayer.h */,
+				D4381E1E1ECED830001D3128 /* WWPieCHartLayer.m */,
+				D4381E1F1ECED830001D3128 /* WWPieChartView.h */,
+				D4381E201ECED830001D3128 /* WWPieChartView.m */,
+			);
+			path = Pie;
+			sourceTree = "<group>";
+		};
+		D4381E211ECED830001D3128 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				D4381E3C1ECED935001D3128 /* UIImage+Extension.h */,
+				D4381E3D1ECED935001D3128 /* UIImage+Extension.m */,
+				D4381E221ECED830001D3128 /* NSString+DecimalNumber.h */,
+				D4381E231ECED830001D3128 /* NSString+DecimalNumber.m */,
+				D4381E241ECED830001D3128 /* UIColor+Hex.h */,
+				D4381E251ECED830001D3128 /* UIColor+Hex.m */,
+				D4381E261ECED830001D3128 /* UIView+Extension.h */,
+				D4381E271ECED830001D3128 /* UIView+Extension.m */,
+				D4381E281ECED830001D3128 /* WWTool.h */,
+				D4381E291ECED830001D3128 /* WWTool.m */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +293,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4381E2C1ECED830001D3128 /* WWBarView.m in Sources */,
+				D4381E391ECED830001D3128 /* UIColor+Hex.m in Sources */,
+				D4381E341ECED830001D3128 /* WWLineYAxisItem.m in Sources */,
+				D4381E371ECED830001D3128 /* WWPieChartView.m in Sources */,
+				D4381E2D1ECED830001D3128 /* WWBarXAxisItem.m in Sources */,
 				D4381DF01ECED1BF001D3128 /* ViewController.m in Sources */,
+				D4381E331ECED830001D3128 /* WWLineXAxisView.m in Sources */,
+				D4381E381ECED830001D3128 /* NSString+DecimalNumber.m in Sources */,
 				D4381DED1ECED1BF001D3128 /* AppDelegate.m in Sources */,
+				D4381E3E1ECED935001D3128 /* UIImage+Extension.m in Sources */,
+				D4381E301ECED830001D3128 /* WWXAxisView.m in Sources */,
+				D4381E3A1ECED830001D3128 /* UIView+Extension.m in Sources */,
+				D4381E3B1ECED830001D3128 /* WWTool.m in Sources */,
+				D4381E361ECED830001D3128 /* WWPieCHartLayer.m in Sources */,
+				D4381E2F1ECED830001D3128 /* WWChartEntity.m in Sources */,
+				D4381E2B1ECED830001D3128 /* WWBarScrollView.m in Sources */,
+				D4381E351ECED830001D3128 /* WWPieChartDataItem.m in Sources */,
+				D4381E2E1ECED830001D3128 /* WWChartBackGroundView.m in Sources */,
+				D4381E311ECED830001D3128 /* WWLineChartView.m in Sources */,
+				D4381E321ECED830001D3128 /* WWLineScrollView.m in Sources */,
 				D4381DEA1ECED1BF001D3128 /* main.m in Sources */,
+				D4381E2A1ECED830001D3128 /* WWBarChartItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
