@@ -12,6 +12,8 @@
 
 + (UIColor *) colorWithHexString: (NSString *)color;
 
++ (UIColor *)colorWithHexString:(NSString *)color alpha:(CGFloat)alpha;
+
 + (CABasicAnimation *)addAnimationForKeypath:(NSString *)keyPath
                                    fromValue:(CGFloat)fromValue
                                      toValue:(CGFloat)toValue

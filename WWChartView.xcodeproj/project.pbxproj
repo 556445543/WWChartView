@@ -28,7 +28,6 @@
 		D4381E361ECED830001D3128 /* WWPieCHartLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D4381E1E1ECED830001D3128 /* WWPieCHartLayer.m */; };
 		D4381E371ECED830001D3128 /* WWPieChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4381E201ECED830001D3128 /* WWPieChartView.m */; };
 		D4381E381ECED830001D3128 /* NSString+DecimalNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = D4381E231ECED830001D3128 /* NSString+DecimalNumber.m */; };
-		D4381E391ECED830001D3128 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = D4381E251ECED830001D3128 /* UIColor+Hex.m */; };
 		D4381E3A1ECED830001D3128 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D4381E271ECED830001D3128 /* UIView+Extension.m */; };
 		D4381E3B1ECED830001D3128 /* WWTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D4381E291ECED830001D3128 /* WWTool.m */; };
 		D4381E3E1ECED935001D3128 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D4381E3D1ECED935001D3128 /* UIImage+Extension.m */; };
@@ -75,8 +74,6 @@
 		D4381E201ECED830001D3128 /* WWPieChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWPieChartView.m; sourceTree = "<group>"; };
 		D4381E221ECED830001D3128 /* NSString+DecimalNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DecimalNumber.h"; sourceTree = "<group>"; };
 		D4381E231ECED830001D3128 /* NSString+DecimalNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DecimalNumber.m"; sourceTree = "<group>"; };
-		D4381E241ECED830001D3128 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
-		D4381E251ECED830001D3128 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		D4381E261ECED830001D3128 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		D4381E271ECED830001D3128 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		D4381E281ECED830001D3128 /* WWTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWTool.h; sourceTree = "<group>"; };
@@ -212,8 +209,6 @@
 				D4381E3D1ECED935001D3128 /* UIImage+Extension.m */,
 				D4381E221ECED830001D3128 /* NSString+DecimalNumber.h */,
 				D4381E231ECED830001D3128 /* NSString+DecimalNumber.m */,
-				D4381E241ECED830001D3128 /* UIColor+Hex.h */,
-				D4381E251ECED830001D3128 /* UIColor+Hex.m */,
 				D4381E261ECED830001D3128 /* UIView+Extension.h */,
 				D4381E271ECED830001D3128 /* UIView+Extension.m */,
 				D4381E281ECED830001D3128 /* WWTool.h */,
@@ -294,7 +289,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4381E2C1ECED830001D3128 /* WWBarView.m in Sources */,
-				D4381E391ECED830001D3128 /* UIColor+Hex.m in Sources */,
 				D4381E341ECED830001D3128 /* WWLineYAxisItem.m in Sources */,
 				D4381E371ECED830001D3128 /* WWPieChartView.m in Sources */,
 				D4381E2D1ECED830001D3128 /* WWBarXAxisItem.m in Sources */,
@@ -473,6 +467,7 @@
 				D4381DFE1ECED1C0001D3128 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
