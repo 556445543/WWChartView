@@ -33,6 +33,10 @@
 
 @property (nonatomic,assign) BOOL highlightLineShowEnabled;
 
+/**
+ 如果为YES 需要设置 xAxisCount 的值来确定X轴上时间个数。
+ 如果为NO 则不需要
+ */
 @property (nonatomic,assign) BOOL autoDisplayXAxis;
 
 @property (nonatomic,assign) NSInteger xAxisCount;

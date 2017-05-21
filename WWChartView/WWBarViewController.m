@@ -14,17 +14,117 @@
 
 @interface WWBarViewController ()
 
-@property (nonatomic,weak) WWBarView *barView;
+//@property (nonatomic,weak) WWBarView *barView;
 @end
 
 @implementation WWBarViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor blackColor];
+    UIScrollView *scrollView = (UIScrollView *)self.view;
+    scrollView.contentSize = CGSizeMake([UIScreen mainScreen].bounds.size.width, (100+108+60)*3);
     // Do any additional setup after loading the view.
+    //不能滚动的barview
     [self unEnableScrollWithBarView];
- 
+    //能滚动
     [self scrollEnableWithBarView];
+    //自定义x轴的位置
+    [self unEnableScrollWithCustomXAxisValue];
+}
+
+- (void)unEnableScrollWithCustomXAxisValue
+{
+    WWBarView *barView = [[WWBarView alloc] initWithFrame:CGRectMake(0, 100+108+60+108+60, self.view.bounds.size.width, 108)];
+    
+    [self.view addSubview:barView];
+    barView.highlightLineShowEnabled = YES;
+    barView.zoomEnabled = NO;
+    barView.strokeColor = [UIColor redColor];
+    barView.yMAxValue = 296;
+    barView.yMinValue = 2;
+    barView.yisYLabelArray =@[@"296",
+                                   @"198",
+                                   @"100",
+                                   @"2"];
+    barView.horizontalLinePitch = (barView.height - barView.topSeparationDistance - barView.bottomSeparationDistance)/3;
+
+    barView.horizontalLineCount =4;
+
+    barView.PromptLabel.text = @"无完成的FOREX模拟挑战赛";
+
+    barView.chartItemColor.strokeTopColor = [UIColor redColor];
+    barView.yisYLeftLabelArray = @[];
+    
+    CGFloat distance = (barView.width-(barView.leftSeparationDistance + barView.rightSeparationDistance))/24.0;
+    barView.horizontalSpacing = distance/2;
+    barView.candleWidth = distance/2;
+    barView.dateArray = @[];
+    barView.autoDisplayXAxis = NO;
+    NSArray *times = @[@"7:00",@"14:00",@"21:00"];
+    NSMutableArray *frames = @[].mutableCopy;
+    barView.xAxisCount = 3;
+    barView.drawYAxisEnable = YES;
+    barView.rightYAxisColor = [UIColor lightTextColor];
+    
+    barView.animation = YES;
+    CGFloat width = (barView.width - barView.leftSeparationDistance - barView.rightSeparationDistance);
+    NSMutableArray *xAxiscoordinateArray = @[].mutableCopy;
+    for (int i =0; i<times.count; i++) {
+        //竖直线条
+        CGFloat pitch =  width/(24.0);
+        CGFloat firstLineStartX = pitch *7*(i+1);
+        CGFloat lineStartX = pitch *7+ pitch *7*(i);
+        CGRect rect;
+        
+        if (i == 0){
+            
+            rect = CGRectMake(firstLineStartX + barView.candleWidth/2 + barView.horizontalSpacing/2 , 2, 24, 24);
+            [frames addObject:[NSValue valueWithCGRect:rect]];
+            
+            
+        }else{
+            
+            rect = CGRectMake(lineStartX+barView.candleWidth/2+ barView.horizontalSpacing/2  , 2, 24, 24);
+            
+            [frames addObject:[NSValue valueWithCGRect:rect]];
+            
+        }
+        WWBarXAxisItem *item = [WWBarXAxisItem itemModelWithCoordinateAxisX:times[i] rect:rect];
+        [xAxiscoordinateArray addObject:item];
+    }
+    
+    barView.lineDataArray = @[].mutableCopy;
+    barView.xAxiscoordinateArray = xAxiscoordinateArray;
+        
+    barView.dataArray = @[@161,
+                               @72,
+                               @31,
+                               @4,
+                               @3,
+                               @5,
+                               @2,
+                               @14,
+                               @16,
+                               @33,
+                               @46,
+                               @21,
+                               @14,
+                               @26,
+                               @26,
+                               @56,
+                               @99,
+                               @72,
+                               @75,
+                               @101,
+                               @160,
+                               @190,
+                               @246,
+                               @189];
+
+    [barView stroke];
+    
+
 }
 
 - (void)scrollEnableWithBarView
@@ -32,50 +132,51 @@
     WWBarView *barView = [[WWBarView alloc] initWithFrame:CGRectMake(0, 100+108+60, self.view.bounds.size.width, 108)];
     
     [self.view addSubview:barView];
-    self.barView = barView;
-    self.barView.candleMaxWidth = 30;
-    self.barView.candleMinWidth = 8;
-    self.barView.animation = YES;
-    self.barView.drawCenterLineEnabled = YES;
-    self.barView.highlightLineShowEnabled = YES;
-    self.barView.yMAxValue = 50;
-    self.barView.yMinValue = 127;
-    self.barView.autoDisplayXAxis = YES;
-    self.barView.PromptLabel.text = @"无实盘项目";
     
-    self.barView.PromptLabel.text = @"无完成的FOREX模拟挑战赛";
-    self.barView.yisYLabelArray = @[@"50%"
+    barView.candleMaxWidth = 30;
+    barView.candleMinWidth = 8;
+    barView.drawCenterLineEnabled = YES;
+    barView.highlightLineShowEnabled = YES;
+    barView.yMAxValue = 50;
+    barView.yMinValue = 127;
+    barView.PromptLabel.text = @"无实盘项目";
+    
+    barView.PromptLabel.text = @"无完成的FOREX模拟挑战赛";
+    barView.yisYLabelArray = @[@"50%"
                                     ,@"-9%"
                                     ,@"-68%"
                                     ,@"-127%"] ;
-    self.barView.chartItemColor.strokeTopColor = [UIColor orangeColor];
-    self.barView.chartItemColor.strokeBottomColor = [UIColor greenColor];
-    self.barView.yisYLeftLabelArray = @[];
-    self.barView.xAxisCount = 4;
-    self.barView.horizontalSpacing = 14;
-    self.barView.zoomEnabled = YES;
-    self.barView.rightYAxisColor = [UIColor lightTextColor];
-    self.barView.drawYAxisEnable = NO;
+    barView.chartItemColor.strokeTopColor = [UIColor orangeColor];
+    barView.chartItemColor.strokeBottomColor = [UIColor greenColor];
+    barView.yisYLeftLabelArray = @[];
+    
+    barView.xAxisCount = 4;
+    barView.autoDisplayXAxis = YES;
+
+    barView.horizontalSpacing = 14;
+    barView.zoomEnabled = YES;
+    barView.rightYAxisColor = [UIColor lightTextColor];
+    barView.drawYAxisEnable = NO;
     
     
     __weak __typeof(self)weakSelf = self;
     
-    [self.barView setChartViewDidPitchCompletion:^(CGFloat candleWidth){
+    [barView setChartViewDidPitchCompletion:^(CGFloat candleWidth){
         NSLog(@"放大 setChartViewDidPitchCompletion%f",candleWidth);
     }];
-    self.barView.animation = YES;
+    barView.animation = YES;
     
   
-    self.barView.candleWidth = 8;
+    barView.candleWidth = 8;
     
 
-    self.barView.horizontalSpacing = 14;
+    barView.horizontalSpacing = 14;
     
-    self.barView.horizontalLinePitch = (self.barView.height - self.barView.topSeparationDistance - self.barView.bottomSeparationDistance)/3;
-    self.barView.yAxisDistance = nil;
-    self.barView.horizontalLineCount =4;
-    self.barView.lineDataArray = @[];
-    self.barView.dateArray = @[@"05-14",
+    barView.horizontalLinePitch = (barView.height - barView.topSeparationDistance - barView.bottomSeparationDistance)/3;
+    barView.yAxisDistance = nil;
+    barView.horizontalLineCount =4;
+    barView.lineDataArray = @[];
+    barView.dateArray = @[@"05-14",
                                @"05-17",
                                @"05-22",
                                @"05-28",
@@ -123,7 +224,7 @@
                                @"03-27",
                                @"04-10"
                                ];
-    self.barView.dataArray =@[@0,
+    barView.dataArray =@[@0,
                               @0.22,
                               @7.61,
                               @-0.07,
@@ -171,7 +272,7 @@
                               @-8.16,
                               @4.22
 ];
-    [self.barView stroke];
+    [barView stroke];
     
     [barView setChartViewDidClickedCompletion:^(NSInteger tag) {
         NSLog(@"点击了回调哦！！！！！---%ld",tag);
@@ -183,7 +284,7 @@
     WWBarView *barView = [[WWBarView alloc] initWithFrame:CGRectMake(0, 100, self.view.bounds.size.width, 108)];
     
     [self.view addSubview:barView];
-    self.barView = barView;
+    
     NSArray *dataArray = @[@45.07,
                            @-86.26,
                            @-97.41,
@@ -192,55 +293,55 @@
                            @-9.72,
                            @-96.53,
                            @32.53];
-    self.barView.highlightLineShowEnabled = YES;
-    self.barView.yMAxValue = 76;
-    self.barView.yMinValue = 128;
-    self.barView.autoDisplayXAxis = YES;
+    barView.highlightLineShowEnabled = YES;
+    barView.yMAxValue = 76;
+    barView.yMinValue = 128;
+    barView.autoDisplayXAxis = YES;
 
-    self.barView.PromptLabel.text = @"无实盘项目";
+    barView.PromptLabel.text = @"无实盘项目";
     
 
-    self.barView.PromptLabel.text = @"无完成的FOREX模拟挑战赛";
+    barView.PromptLabel.text = @"无完成的FOREX模拟挑战赛";
 
-    self.barView.yisYLabelArray = @[@"76%"
+    barView.yisYLabelArray = @[@"76%"
                                     ,@"8%"
                                     ,@"-60%"
                                     ,@"-128%"] ;
 
-    self.barView.chartItemColor.strokeTopColor = [UIColor orangeColor];
-    self.barView.chartItemColor.strokeBottomColor = [UIColor greenColor];
-    self.barView.yisYLeftLabelArray = @[];
-    self.barView.xAxisCount = 4;
-    self.barView.horizontalSpacing = 14;
-    self.barView.zoomEnabled = YES;
-    self.barView.rightYAxisColor = [UIColor lightTextColor];
+    barView.chartItemColor.strokeTopColor = [UIColor orangeColor];
+    barView.chartItemColor.strokeBottomColor = [UIColor greenColor];
+    barView.yisYLeftLabelArray = @[];
+    barView.xAxisCount = 4;
+    barView.horizontalSpacing = 14;
+    barView.zoomEnabled = YES;
+    barView.rightYAxisColor = [UIColor lightTextColor];
 
-    self.barView.drawYAxisEnable = NO;
+    barView.drawYAxisEnable = NO;
     
-    self.barView.candleMaxWidth = 30;
-    self.barView.candleMinWidth = 8;
-    self.barView.animation = YES;
+    barView.candleMaxWidth = 30;
+    barView.candleMinWidth = 8;
+    barView.animation = YES;
     
     __weak __typeof(self)weakSelf = self;
     
-    [self.barView setChartViewDidPitchCompletion:^(CGFloat candleWidth){
+    [barView setChartViewDidPitchCompletion:^(CGFloat candleWidth){
         NSLog(@"放大 setChartViewDidPitchCompletion%f",candleWidth);
 
     }];
 
-    self.barView.animation = YES;
+    barView.animation = YES;
     
-    self.barView.candleWidth = 8;
+    barView.candleWidth = 8;
     
-    CGFloat distance = (self.barView.width-self.barView.leftSeparationDistance - self.barView.rightSeparationDistance) /((dataArray.count));
-    self.barView.horizontalSpacing = distance - self.barView.candleWidth;
+    CGFloat distance = (barView.width-barView.leftSeparationDistance - barView.rightSeparationDistance) /((dataArray.count));
+    barView.horizontalSpacing = distance - barView.candleWidth;
     
-    self.barView.horizontalLineCount =4;
+    barView.horizontalLineCount =4;
 
-    self.barView.horizontalLinePitch = (self.barView.height - self.barView.topSeparationDistance - self.barView.bottomSeparationDistance)/(self.barView.horizontalLineCount-1);
-    self.barView.yAxisDistance = nil;
-    self.barView.lineDataArray = @[].mutableCopy;
-    self.barView.dateArray = @[@"12-20",
+    barView.horizontalLinePitch = (barView.height - barView.topSeparationDistance - barView.bottomSeparationDistance)/(barView.horizontalLineCount-1);
+    barView.yAxisDistance = nil;
+    barView.lineDataArray = @[].mutableCopy;
+    barView.dateArray = @[@"12-20",
                                @"12-23",
                                @"01-22",
                                @"02-20",
@@ -249,8 +350,8 @@
                                @"03-19",
                                @"03-21"
                                ];
-    self.barView.dataArray = dataArray;
-    [self.barView stroke];
+    barView.dataArray = dataArray;
+    [barView stroke];
     
     [barView setChartViewDidClickedCompletion:^(NSInteger tag) {
         NSLog(@"点击了回调哦！！！！！---%ld",tag);

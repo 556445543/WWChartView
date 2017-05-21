@@ -103,7 +103,7 @@
                 }
                 WWChartEntity *chartEntity = self.entityArray[cc];
 
-                        NSInteger index = self.firstIndex + distanceStr.integerValue * i;
+                NSInteger index = self.firstIndex + distanceStr.integerValue * i;
 //                if (self.dateArray.count <= index) {
 //                    index = self.dateArray.count - 1;
 //                }
