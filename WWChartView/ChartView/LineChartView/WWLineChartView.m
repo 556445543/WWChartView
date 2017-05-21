@@ -50,7 +50,8 @@
     self.candleMaxWidth = 15;
     self.candleMinWidth = 1;
     self.candleWidth = 8;
-    
+    CGFloat scrollViewWidth = self.bounds.size.width - self.leftSeparationDistance - self.rightSeparationDistance;
+
     WWLineScrollView *scrollView = [[WWLineScrollView alloc] initWithFrame:CGRectMake(self.leftSeparationDistance, self.topSeparationDistance, scrollViewWidth,self.bounds.size.height - self.topSeparationDistance)];
     scrollView.delegate = self;
     scrollView.showsHorizontalScrollIndicator = NO;

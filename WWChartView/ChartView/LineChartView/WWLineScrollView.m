@@ -348,7 +348,6 @@ static const CGFloat radius=1.8f;
             
             self.centerPointLayer.path = drawPoint.CGPath;
             [self.layer addSublayer:self.centerPointLayer];
-            NSLog(@"选中了第%ld个！！",entity.index);
             if (self.chartViewDidClickedCompletion) {
                 self.chartViewDidClickedCompletion(entity.index);
             }

@@ -14,7 +14,6 @@
 
 @interface WWBarViewController ()
 
-//@property (nonatomic,weak) WWBarView *barView;
 @end
 
 @implementation WWBarViewController

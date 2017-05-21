@@ -54,6 +54,7 @@
     self.candleWidth = 8;
     self.horizontalSpacing = 14;
     self.candleLineWidth = self.candleWidth;
+    CGFloat scrollViewWidth = self.bounds.size.width - self.leftSeparationDistance - self.rightSeparationDistance;
     WWBarScrollView *scrollView = [[WWBarScrollView alloc] initWithFrame:CGRectMake(self.leftSeparationDistance, self.topSeparationDistance, scrollViewWidth,self.bounds.size.height - self.topSeparationDistance)];
     scrollView.delegate = self;
     scrollView.showsVerticalScrollIndicator = NO;
@@ -115,7 +116,7 @@
     }
     
     if (self.leftSeparationDistance +(self.candleWidth + self.horizontalSpacing) *self.dataArray.count < self.bounds.size.width) {
-        self.scrollView.contentSize = CGSizeMake(scrollViewWidth,0);
+        self.scrollView.contentSize = CGSizeMake(self.scrollView.width,0);
     }
     
     

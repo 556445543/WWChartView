@@ -43,7 +43,6 @@
 
 - (void)updateXAxisArray;
 
-
 - (void)upDateArray:(NSArray<NSString *> *)dateArray candleWidth:(CGFloat)candleWidth horizontalSpacing:(CGFloat)horizontalSpacing countOfshowCandle:(CGFloat)countOfshowCandle entityArray:(NSArray< WWChartEntity *> *)entityArray;
 
 @end

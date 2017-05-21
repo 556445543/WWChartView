@@ -6,7 +6,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#define  scrollViewWidth  self.bounds.size.width - self.leftSeparationDistance - self.rightSeparationDistance
 
 @class WWBarXAxisItem;
 
@@ -52,7 +51,7 @@
 /****左边y轴坐标  优先给出 根据坐标值算出左边距离***/
 @property (nonatomic,copy) NSArray *yisYLeftLabelArray;
 
-/**y坐标值距离 如果为nil 则根据横线个数自动计算宽度 */
+/**y坐标值距离 如果为nil 则根据横线个数 horizontalLineCount 自动计算宽度 */
 @property (nonatomic,copy) NSString *yAxisDistance;
 
 /*****水平线线距离******/
