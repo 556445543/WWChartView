@@ -11,6 +11,7 @@
 #import "WWBarViewController.h"
 #import "WWBarView.h"
 #import "UIView+Extension.h"
+#import "WWTool.h"
 
 @interface WWBarViewController ()
 
@@ -30,6 +31,64 @@
     [self scrollEnableWithBarView];
     //自定义x轴的位置
     [self unEnableScrollWithCustomXAxisValue];
+    
+    [self unEnableScrollWithCustomXAxisValue];
+    //同时绘制折线图和柱状图
+    [self barLineView];
+}
+
+- (void)barLineView
+{
+    NSArray *dataArray = @[@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@4.62,@0,@3.63,@5.52,@12.74,@8.05,@0,@11.62,@0,@0,@8.44,@0];
+    NSArray *dateArray = @[@"05-16",@"05-21",@"05-28",@"06-04",@"06-11",@"06-18",@"06-25",@"07-02",@"07-09",@"07-16",@"07-23",@"07-30",@"08-06",@"08-13",@"08-20",@"08-27",@"09-03",@"09-10",@"09-17",@"09-24",@"09-29",@"09-29",@"09-29",@"10-08",@"10-11",@"10-12",@"10-15",@"10-22",@"10-29",@"11-05",@"11-13",@"11-19",@"11-26",@"12-03",@"12-10",@"12-17",@"12-24",@"12-31",@"01-06",@"01-14",@"01-21",@"02-04",@"02-18",@"03-04",@"03-25",@"04-08",@"05-02",@"05-19"];
+    
+    NSArray *lineDataArray = @[@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@4.62,@4.62,@8.25,@13.77,@26.51,@34.56,@34.56,@46.18,@46.18,@46.18,@54.62,@54.62];
+    
+    WWBarView *barView = [[WWBarView alloc] initWithFrame:CGRectMake(0, 100+108+60+108+60+108+60, self.view.bounds.size.width, 108)];
+    
+    [self.view addSubview:barView];
+    barView.yMAxValue = 15.28;
+    barView.yMinValue = 0;
+    barView.yisYLabelArray =  @[@"65.5",
+                                @"43.7",
+                                @"21.8",
+                                @"0"];
+    barView.yisYLeftLabelArray = @[@"15.28",
+                                  @"10.19",
+                                  @"5.10",
+                                  @"0"];
+    
+
+    barView.PromptLabel.text = @"无完成的FOREX模拟挑战赛";
+        
+    barView.autoDisplayXAxis = YES;
+    barView.zoomEnabled = NO;
+    barView.highlightLineShowEnabled = YES;
+    barView.candleWidth = 8;
+    barView.animation = YES;
+    barView.chartItemColor.strokeTopColor = [UIColor orangeColor];
+    
+    barView.horizontalSpacing = 14;
+    
+    
+    barView.rightYAxisColor = [WWTool colorWithHexString:@"#3C87FE"];
+    barView.leftYAxisColor = [UIColor orangeColor];
+    barView.xAxisCount = 4;
+    barView.drawYAxisEnable = NO;
+    
+    barView.dateArray = dateArray;
+    barView.dataArray = dataArray;
+    
+    barView.yLineMAxValue = 65.54;
+    barView.candleLineWidth = barView.candleWidth + barView.horizontalSpacing;
+    
+    barView.horizontalLinePitch = (barView.height - barView.topSeparationDistance - barView.bottomSeparationDistance)/3;
+    barView.yAxisDistance = nil;
+    barView.horizontalLineCount =4;
+    
+    barView.lineDataArray = lineDataArray;
+    [barView stroke];
+
 }
 
 - (void)unEnableScrollWithCustomXAxisValue

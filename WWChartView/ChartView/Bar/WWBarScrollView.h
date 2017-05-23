@@ -46,7 +46,7 @@
 @property (nonatomic,copy) void(^chartViewDidPitchCompletion)(CGFloat candleWidth);
 
 /*绘制的线 不支持 放大缩小**/
-@property (nonatomic,copy) NSArray *lineDataArray;
+@property (nonatomic,copy) NSArray <NSNumber *> *lineDataArray;
 @property (nonatomic,assign) CGFloat yLineMAxValue;
 @property (nonatomic,assign) CGFloat yLineMinValue;
 @property (nonatomic,copy) void (^chartLineCallBack)(NSInteger index);

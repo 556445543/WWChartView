@@ -49,7 +49,7 @@
 @property (nonatomic,strong) UILabel *PromptLabel;
 
 /****左边y轴坐标  优先给出 根据坐标值算出左边距离***/
-@property (nonatomic,copy) NSArray *yisYLeftLabelArray;
+@property (nonatomic,copy) NSArray <NSString *> *yisYLeftLabelArray;
 
 /**y坐标值距离 如果为nil 则根据横线个数 horizontalLineCount 自动计算宽度 */
 @property (nonatomic,copy) NSString *yAxisDistance;
