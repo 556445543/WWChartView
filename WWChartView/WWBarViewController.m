@@ -49,7 +49,7 @@
     [self.view addSubview:barView];
     barView.yMAxValue = 15.28;
     barView.yMinValue = 0;
-    barView.yisYLabelArray =  @[@"65.5",
+    barView.yisYLabelArray = @[@"65.5",
                                 @"43.7",
                                 @"21.8",
                                 @"0"];

@@ -14,12 +14,12 @@
 @property (nonatomic,strong) UIImageView *backgroundImageView;
 /***中点Y值坐标 *****/
 @property (nonatomic,assign,readonly) CGFloat barChartY;
-/**能否放大缩小*/
-@property (nonatomic,assign)BOOL zoomEnabled;
-
+/**能否横向放大缩小*/
+@property (nonatomic,assign) BOOL zoomEnabled;
 /**绘制y轴*/
 @property (nonatomic,assign) BOOL drawYAxisEnable;
-
+/** drawYAxisEnable 为YES 可用
+    autoDisplayXAxis 为NO 则绘制坐标值**/
 @property (nonatomic,copy) NSArray <WWBarXAxisItem *>*xAxiscoordinateArray;
 
 /*****视图顶部间距******/
@@ -42,7 +42,6 @@
 /******  是否画出中点线*******/
 @property (nonatomic,assign) BOOL drawCenterLineEnabled;
 /****日期数组****/
-
 @property (nonatomic,copy) NSArray <NSString *>*dateArray;
 
 /*****无数据提示label******/

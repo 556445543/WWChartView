@@ -287,7 +287,7 @@
     self.scrollView.candleLineWidth = candleLineWidth;
 }
 
-- (void)setLineDataArray:(NSArray *)lineDataArray
+- (void)setLineDataArray:(NSArray<NSNumber *> *)lineDataArray
 {
     _lineDataArray = [lineDataArray copy];
     self.scrollView.lineDataArray = lineDataArray;
