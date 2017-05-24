@@ -33,12 +33,12 @@
 		D4381E4A1ECEE332001D3128 /* chartbg.png in Resources */ = {isa = PBXBuildFile; fileRef = D4381E471ECEE332001D3128 /* chartbg.png */; };
 		D4381E4B1ECEE332001D3128 /* chartbg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D4381E481ECEE332001D3128 /* chartbg@2x.png */; };
 		D4381E4C1ECEE332001D3128 /* chartbg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D4381E491ECEE332001D3128 /* chartbg@3x.png */; };
-		D458B8911ECEE61C00C34520 /* WWTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D458B8901ECEE61C00C34520 /* WWTableViewController.m */; };
-		D458B8941ECEE96600C34520 /* WWBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D458B8931ECEE96600C34520 /* WWBarViewController.m */; };
-		D458B8971ECEE97100C34520 /* WWLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D458B8961ECEE97100C34520 /* WWLineViewController.m */; };
-		D458B89A1ECEE98000C34520 /* WWCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D458B8991ECEE98000C34520 /* WWCircleViewController.m */; };
 		D497BC891ED4333600E43680 /* line.json in Resources */ = {isa = PBXBuildFile; fileRef = D497BC881ED4333600E43680 /* line.json */; };
 		D497BC8C1ED43A1F00E43680 /* WWLineChartEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = D497BC8B1ED43A1F00E43680 /* WWLineChartEntity.m */; };
+		D497BC971ED5904E00E43680 /* WWBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D497BC901ED5904E00E43680 /* WWBarViewController.m */; };
+		D497BC981ED5904E00E43680 /* WWCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D497BC921ED5904E00E43680 /* WWCircleViewController.m */; };
+		D497BC991ED5904E00E43680 /* WWLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D497BC941ED5904E00E43680 /* WWLineViewController.m */; };
+		D497BC9A1ED5904E00E43680 /* WWTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D497BC961ED5904E00E43680 /* WWTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,17 +89,17 @@
 		D4381E471ECEE332001D3128 /* chartbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chartbg.png; sourceTree = "<group>"; };
 		D4381E481ECEE332001D3128 /* chartbg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chartbg@2x.png"; sourceTree = "<group>"; };
 		D4381E491ECEE332001D3128 /* chartbg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chartbg@3x.png"; sourceTree = "<group>"; };
-		D458B88F1ECEE61C00C34520 /* WWTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWTableViewController.h; sourceTree = "<group>"; };
-		D458B8901ECEE61C00C34520 /* WWTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWTableViewController.m; sourceTree = "<group>"; };
-		D458B8921ECEE96600C34520 /* WWBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWBarViewController.h; sourceTree = "<group>"; };
-		D458B8931ECEE96600C34520 /* WWBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWBarViewController.m; sourceTree = "<group>"; };
-		D458B8951ECEE97100C34520 /* WWLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWLineViewController.h; sourceTree = "<group>"; };
-		D458B8961ECEE97100C34520 /* WWLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWLineViewController.m; sourceTree = "<group>"; };
-		D458B8981ECEE98000C34520 /* WWCircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWCircleViewController.h; sourceTree = "<group>"; };
-		D458B8991ECEE98000C34520 /* WWCircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWCircleViewController.m; sourceTree = "<group>"; };
 		D497BC881ED4333600E43680 /* line.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = line.json; sourceTree = "<group>"; };
 		D497BC8A1ED43A1F00E43680 /* WWLineChartEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWLineChartEntity.h; sourceTree = "<group>"; };
 		D497BC8B1ED43A1F00E43680 /* WWLineChartEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWLineChartEntity.m; sourceTree = "<group>"; };
+		D497BC8F1ED5904E00E43680 /* WWBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWBarViewController.h; sourceTree = "<group>"; };
+		D497BC901ED5904E00E43680 /* WWBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWBarViewController.m; sourceTree = "<group>"; };
+		D497BC911ED5904E00E43680 /* WWCircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWCircleViewController.h; sourceTree = "<group>"; };
+		D497BC921ED5904E00E43680 /* WWCircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWCircleViewController.m; sourceTree = "<group>"; };
+		D497BC931ED5904E00E43680 /* WWLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWLineViewController.h; sourceTree = "<group>"; };
+		D497BC941ED5904E00E43680 /* WWLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWLineViewController.m; sourceTree = "<group>"; };
+		D497BC951ED5904E00E43680 /* WWTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWTableViewController.h; sourceTree = "<group>"; };
+		D497BC961ED5904E00E43680 /* WWTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,22 +133,15 @@
 		D4381DE71ECED1BF001D3128 /* WWChartView */ = {
 			isa = PBXGroup;
 			children = (
+				D497BC8E1ED5904E00E43680 /* Classes */,
 				D4381DFF1ECED830001D3128 /* ChartView */,
 				D4381DEB1ECED1BF001D3128 /* AppDelegate.h */,
 				D4381DEC1ECED1BF001D3128 /* AppDelegate.m */,
-				D458B88F1ECEE61C00C34520 /* WWTableViewController.h */,
-				D458B8901ECEE61C00C34520 /* WWTableViewController.m */,
 				D4381DF11ECED1C0001D3128 /* Main.storyboard */,
 				D4381DF41ECED1C0001D3128 /* Assets.xcassets */,
 				D4381DF61ECED1C0001D3128 /* LaunchScreen.storyboard */,
 				D4381DF91ECED1C0001D3128 /* Info.plist */,
 				D4381DE81ECED1BF001D3128 /* Supporting Files */,
-				D458B8921ECEE96600C34520 /* WWBarViewController.h */,
-				D458B8931ECEE96600C34520 /* WWBarViewController.m */,
-				D458B8951ECEE97100C34520 /* WWLineViewController.h */,
-				D458B8961ECEE97100C34520 /* WWLineViewController.m */,
-				D458B8981ECEE98000C34520 /* WWCircleViewController.h */,
-				D458B8991ECEE98000C34520 /* WWCircleViewController.m */,
 				D497BC8A1ED43A1F00E43680 /* WWLineChartEntity.h */,
 				D497BC8B1ED43A1F00E43680 /* WWLineChartEntity.m */,
 			);
@@ -249,6 +242,21 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
+		D497BC8E1ED5904E00E43680 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D497BC8F1ED5904E00E43680 /* WWBarViewController.h */,
+				D497BC901ED5904E00E43680 /* WWBarViewController.m */,
+				D497BC911ED5904E00E43680 /* WWCircleViewController.h */,
+				D497BC921ED5904E00E43680 /* WWCircleViewController.m */,
+				D497BC931ED5904E00E43680 /* WWLineViewController.h */,
+				D497BC941ED5904E00E43680 /* WWLineViewController.m */,
+				D497BC951ED5904E00E43680 /* WWTableViewController.h */,
+				D497BC961ED5904E00E43680 /* WWTableViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -324,17 +332,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D497BC981ED5904E00E43680 /* WWCircleViewController.m in Sources */,
 				D4381E2C1ECED830001D3128 /* WWBarView.m in Sources */,
 				D4381E341ECED830001D3128 /* WWLineYAxisItem.m in Sources */,
-				D458B8941ECEE96600C34520 /* WWBarViewController.m in Sources */,
+				D497BC971ED5904E00E43680 /* WWBarViewController.m in Sources */,
 				D4381E371ECED830001D3128 /* WWPieChartView.m in Sources */,
 				D4381E2D1ECED830001D3128 /* WWBarXAxisItem.m in Sources */,
 				D4381E331ECED830001D3128 /* WWLineXAxisView.m in Sources */,
 				D4381E381ECED830001D3128 /* NSString+DecimalNumber.m in Sources */,
-				D458B8911ECEE61C00C34520 /* WWTableViewController.m in Sources */,
 				D4381DED1ECED1BF001D3128 /* AppDelegate.m in Sources */,
 				D4381E3E1ECED935001D3128 /* UIImage+Extension.m in Sources */,
-				D458B89A1ECEE98000C34520 /* WWCircleViewController.m in Sources */,
 				D497BC8C1ED43A1F00E43680 /* WWLineChartEntity.m in Sources */,
 				D4381E301ECED830001D3128 /* WWXAxisView.m in Sources */,
 				D4381E3A1ECED830001D3128 /* UIView+Extension.m in Sources */,
@@ -344,11 +351,12 @@
 				D4381E2B1ECED830001D3128 /* WWBarScrollView.m in Sources */,
 				D4381E351ECED830001D3128 /* WWPieChartDataItem.m in Sources */,
 				D4381E2E1ECED830001D3128 /* WWChartBackGroundView.m in Sources */,
+				D497BC9A1ED5904E00E43680 /* WWTableViewController.m in Sources */,
 				D4381E311ECED830001D3128 /* WWLineChartView.m in Sources */,
 				D4381E321ECED830001D3128 /* WWLineScrollView.m in Sources */,
 				D4381DEA1ECED1BF001D3128 /* main.m in Sources */,
+				D497BC991ED5904E00E43680 /* WWLineViewController.m in Sources */,
 				D4381E2A1ECED830001D3128 /* WWBarChartItem.m in Sources */,
-				D458B8971ECEE97100C34520 /* WWLineViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
