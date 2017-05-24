@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "WWChartBackGroundView.h"
+#import "WWPieChartDataItem.h"
+
 @interface WWPieChartView : WWChartBackGroundView
 
 @end
