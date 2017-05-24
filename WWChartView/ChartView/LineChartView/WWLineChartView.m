@@ -12,7 +12,6 @@
 #import "NSString+DecimalNumber.h"
 #import "WWLineScrollView.h"
 #import "WWLineXAxisView.h"
-#import "WWXAxisView.h"
 
 @interface WWLineChartView()<UIGestureRecognizerDelegate,UIScrollViewDelegate>
 

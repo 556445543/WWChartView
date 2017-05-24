@@ -26,7 +26,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self buildTestDataThen:^{
+        // 根据 点与点 的 距离 和 点所在位置的高度 来绘制 折线
         [self scrollLineView];
+        //直接传坐标值 绘制  折线
         [self pointLineView];
     }];
     

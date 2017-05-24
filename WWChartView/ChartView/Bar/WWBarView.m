@@ -119,6 +119,8 @@
         self.scrollView.contentSize = CGSizeMake(self.scrollView.width,0);
     }
     
+    self.scrollView.x = self.leftSeparationDistance;
+    self.scrollView.width = self.bounds.size.width - self.leftSeparationDistance - self.rightSeparationDistance;
     
     if (!self.autoDisplayXAxis) {
         self.xAxisView.xAxiscoordinateArray = self.xAxiscoordinateArray;
@@ -155,13 +157,6 @@
 -(void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset
 {
     [self updateXAxisIndexWithScrollView:scrollView];
-}
-
--(void)layoutSubviews
-{
-    [super layoutSubviews];
-    
-    self.scrollView.width = self.bounds.size.width - self.leftSeparationDistance - self.rightSeparationDistance;
 }
 
 - (void)drawRect:(CGRect)rect {

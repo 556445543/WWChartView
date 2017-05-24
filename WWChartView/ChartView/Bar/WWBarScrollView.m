@@ -199,9 +199,9 @@ static const CGFloat radius=2.f;
         barlayer.lineWidth = self.candleWidth;
         
         UIBezierPath *path = [UIBezierPath bezierPath];
-        
+
         [path moveToPoint:CGPointMake((i ) * (self.candleWidth + self.horizontalSpacing) +self.candleWidth/2+self.horizontalSpacing/2 , self.barChartY)];
-        
+
         [path addLineToPoint:CGPointMake((i ) * (self.candleWidth + self.horizontalSpacing) +self.candleWidth/2+self.horizontalSpacing/2 , self.barChartY+h)];
         
         rect = CGRectMake((i) * (self.candleWidth + self.horizontalSpacing) +self.horizontalSpacing/2, self.barChartY, self.candleWidth, h);
