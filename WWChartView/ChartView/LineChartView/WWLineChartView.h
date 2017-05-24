@@ -9,11 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "WWChartBackGroundView.h"
 #import "WWLineYAxisItem.h"
+#import "WWBarXAxisItem.h"
 
 @interface WWLineChartView : WWChartBackGroundView
 
 /**
- 点与点之间的距离
+ 点与点之间的距离 
  */
 @property (nonatomic,assign) CGFloat candleWidth;
 

@@ -35,7 +35,7 @@
 
 @property (nonatomic,copy) NSArray <NSString *> *yisYLabelArray;
 
-@property (nonatomic,copy) NSArray <NSNumber *> *dataArray;
+@property (nonatomic,copy) NSArray *dataArray;
 
 @property (nonatomic,copy) void(^chartViewDidClickedCompletion)(NSInteger);
 

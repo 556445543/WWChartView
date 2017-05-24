@@ -100,6 +100,17 @@
 
     if (self.dataArray.count) {
         
+        if ([self.dataArray.firstObject isKindOfClass:[NSString class]]) {
+            NSString *firstPointStr = self.dataArray.firstObject;
+            CGPoint firstPoint = CGPointFromString(firstPointStr);
+            
+            NSString *lastPointStr = self.dataArray.lastObject;
+            CGPoint lastPoint = CGPointFromString(lastPointStr);
+            
+            self.candleWidth = (lastPoint.x - firstPoint.x)/self.dataArray.count;
+        }
+        
+        
         self.xAxisView.width = self.bounds.size.width - self.leftSeparationDistance - self.rightSeparationDistance;
         
         if ((self.candleWidth ) *(self.dataArray.count-1) <= self.scrollView.width) {
@@ -190,6 +201,9 @@
 
 - (void)updaateXAxisIndexWithScrollView:(UIScrollView *)scrollView
 {
+    if (self.scrollView.candleWidth <= 0) {
+        return;
+    }
     NSString *nb3 = [[NSString stringWithFormat:@"%f",scrollView.contentOffset.x] priceByDividingBy:[NSString stringWithFormat:@"%f",self.scrollView.candleWidth]];
     NSString *str = [NSString notRounding:nb3 afterPoint:0 roundingMode:NSRoundUp];
     

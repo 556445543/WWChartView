@@ -216,8 +216,7 @@
     barView.rightYAxisColor = [UIColor lightTextColor];
     barView.drawYAxisEnable = NO;
     
-    
-    __weak __typeof(self)weakSelf = self;
+//    __weak __typeof(self)weakSelf = self;
     
     [barView setChartViewDidPitchCompletion:^(CGFloat candleWidth){
         NSLog(@"放大 setChartViewDidPitchCompletion%f",candleWidth);

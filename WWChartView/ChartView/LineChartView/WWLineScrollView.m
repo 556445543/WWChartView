@@ -115,29 +115,29 @@ static const CGFloat radius=1.8f;
             NSString *pointStr = self.dataArray[i];
             point = CGPointFromString(pointStr);
            
-        }else{
+            }else{
             
-            h = [self.dataArray[i] doubleValue];
+                h = [self.dataArray[i] doubleValue];
 
-            if (h>0) {
-                if (self.yMAxValue == 0) {
-                    h = CGFLOAT_MIN;
-                }else{
+                if (h>0) {
+                    if (self.yMAxValue == 0) {
+                        h = CGFLOAT_MIN;
+                    }else{
                     
-                    h = h /self.yMAxValue  * (self.barChartY);
-                    h = ceil(h);
-                }
+                        h = h /self.yMAxValue  * (self.barChartY);
+                        h = ceil(h);
+                    }
                 
-            }else {
-                if (self.yMinValue == 0) {
-                    h = CGFLOAT_MIN;
-                }else{
-                    //
-                    h = h /self.yMinValue * (self.height - self.barChartY - self.bottomSeparationDistance );
+                }else {
+                    if (self.yMinValue == 0) {
+                        h = CGFLOAT_MIN;
+                    }else{
                     
-                }
+                        h = h /self.yMinValue * (self.height - self.barChartY - self.bottomSeparationDistance );
+                    
+                    }
                 
-            }
+                }
             h = -h;
             CGFloat startX = (self.candleWidth * (i )) ;
 
@@ -359,6 +359,9 @@ static const CGFloat radius=1.8f;
 
 - (void)getHighlightByTouchPoint:(CGPoint) point
 {
+    if (self.candleWidth <= 0) {
+        return;
+    }
     // 十字线偏移量
     NSString *offsetX = [[NSString stringWithFormat:@"%f",point.x] priceByDividingBy:[NSString stringWithFormat:@"%f",self.candleWidth]];
     NSString *highlightIndex = [NSString notRounding:offsetX afterPoint:0 roundingMode:NSRoundDown];
