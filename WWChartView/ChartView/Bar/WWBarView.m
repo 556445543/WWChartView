@@ -103,6 +103,9 @@
 
 - (void)stroke
 {
+    self.scrollView.x = self.leftSeparationDistance;
+    self.scrollView.width = self.bounds.size.width - self.leftSeparationDistance - self.rightSeparationDistance;
+    
     if (self.dataArray.count) {
         self.scrollView.contentSize = CGSizeMake(self.leftSeparationDistance +(self.candleWidth + self.horizontalSpacing) *self.dataArray.count +self.candleWidth/2 + self.horizontalSpacing/2,0);
         self.xAxisView.width = self.scrollView.contentSize.width;
@@ -118,9 +121,6 @@
     if (self.leftSeparationDistance +(self.candleWidth + self.horizontalSpacing) *self.dataArray.count < self.bounds.size.width) {
         self.scrollView.contentSize = CGSizeMake(self.scrollView.width,0);
     }
-    
-    self.scrollView.x = self.leftSeparationDistance;
-    self.scrollView.width = self.bounds.size.width - self.leftSeparationDistance - self.rightSeparationDistance;
     
     if (!self.autoDisplayXAxis) {
         self.xAxisView.xAxiscoordinateArray = self.xAxiscoordinateArray;
